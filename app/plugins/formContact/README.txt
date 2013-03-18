@@ -30,4 +30,4 @@ Change this to the email address of whoever you want to receive the info submitt
 
 Thats it! If you followed all the steps the contact menu item should appear in the Pawtucket navigation menu bar and when clicked the contact form should load in Pawtucket and a user can send you an email via the form.
 
-Note: Depending on your server set-up sometimes you might get a "invalid controller path" error. You may have to adjust the capitalization of the controller file name: sometimes formcontactController will work better than FormcontactController or vice-versa.
+Note: Depending on your server set-up sometimes you might get a "invalid controller path" error. You may have to adjust the capitalization of the controller file name: sometimes formcontactController will work better than FormcontactController or vice-versa. If you still get a "invalid controller path" error try changing the capitalization of the file, formContactPlugin.php, to formcontactPlugin.php
