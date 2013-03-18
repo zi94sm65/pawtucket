@@ -58,13 +58,8 @@
  			$va_errors = array();
  			$vs_controller = "";
 			$this->view->setVar("controller", $vs_controller);
-			
-/* *************************************************************************** */
-/* Change $ps_to_email to the email address of the person(s) you want to receive the info submitted in the contact form */
-
- 			$ps_to_email = "somebody@yourorganization.com";
-
-/* *************************************************************************** */
+		
+ 			$ps_to_email = $this->opo_plugin_config->get('youremailaddress');
  			$ps_from_email = $this->request->getParameter('from_email', pString);
  			$ps_from_name = $this->request->getParameter('from_name', pString);
  			$ps_subject = $this->request->getParameter('subject', pString);
