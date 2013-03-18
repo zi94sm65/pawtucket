@@ -10,6 +10,10 @@ enabled = 1
 To disable plugin set:
 enabled = 0
 
+*IMPORTANT* Set a valid email address
+Change the "somebody@yourorganization.com" to a valid email address of whoever you want to receive the info submitted by a user in the contact form.
+youremailaddress = somebody@yourorganization.com
+
 Then decide if you want to require the user to send you an email with text in the "Message" section of the form by setting:
 require_message_text = 1
 If you do not want to require any message set:
@@ -21,12 +25,6 @@ position_top_level_nav_item_before =
 If you want it to appear before the "About" item, set it like:
 position_top_level_nav_item_before = about
 
-4) Open the file, FormcontactController.php, in the /formContact/controllers/ directory
-Look around line 62-67 for:
-
-$ps_to_email = "somebody@yourorganization.com";
-
-Change this to the email address of whoever you want to receive the info submitted by a user in the contact form.
 
 Thats it! If you followed all the steps the contact menu item should appear in the Pawtucket navigation menu bar and when clicked the contact form should load in Pawtucket and a user can send you an email via the form.
 
